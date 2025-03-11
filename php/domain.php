@@ -27,6 +27,6 @@ if ($domain == "example.com") {
 if (file_exists($file)) {
     include($file);
 } else {
-    echo "<p>Error: File not found.</p>";
+    echo "<p>PHP Error: File not found.</p>";
 }
 ?>
