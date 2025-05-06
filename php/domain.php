@@ -10,12 +10,12 @@ $domain = $_SERVER['HTTP_HOST'];
 $root = __DIR__;
 
 // Define the file to include based on the domain
-if ($domain == "example.com") {
-    $file = "$root/content/main-site.html";
+if ($domain == "localhost:3000") {
+    $file = "$root/sites/local.html";
 } elseif ($domain == "sub.example.com") {
-    $file = "$root/content/sub-site.html";
+    $file = "$root/sites/sub-site.html";
 } elseif ($domain == "anotherdomain.com") {
-    $file = "$root/content/another-site.html";
+    $file = "$root/sites/another-site.html";
 } else {
     $file = "$root/error.html"; // Default fallback
 }
@@ -27,6 +27,6 @@ if ($domain == "example.com") {
 if (file_exists($file)) {
     include($file);
 } else {
-    echo "<p>PHP Error: File not found.</p>";
+    echo "<p>PHP Error: error.html not found.</p>";
 }
 ?>

@@ -11,7 +11,7 @@
 	<body>
 		<h1>Website Coming Soon!</h1>
 		<extra> Return to <a href="http://warmolabs.tf">warmolabs.tf</a> </extra>
-		<extra2><?php include("php/domain.php"); ?></extra2>
+		<?php include("php/domain.php"); ?>
 	</body>
 	<footer>
 		<!--Not in use!-->

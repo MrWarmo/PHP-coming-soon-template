@@ -16,7 +16,7 @@ h1 {
 	text-align: center;
 	margin: auto;
 	color: white;
-	font-family: "Oxanium";
+	font-family: "Oxanium-R";
 	font-weight: 450;
 	font-size: 8vw;
 }
@@ -24,38 +24,52 @@ h1 {
 extra {
 	position: absolute;
 	bottom: 1%;
-	text-align: left;
-	margin-left: 2%;
+	left: 2%;
 	color: white;
-	font-family: "Oxanium";
-	font-weight: 300;
+	font-family: "Oxanium-R";
+	font-size: 4vw;
+}
+
+extra2 {
+	position: absolute;
+	bottom: 1%;
+	right: 2%;
+	color: white;
+	font-family: "Oxanium-R";
 	font-size: 4vw;
 }
 
 footer {
 	position: absolute;
 	bottom: 1%;
-	text-align: left;
-	margin-left: 2%;
+	left: 2%;
 	color: white;
-	font-family: "Oxanium";
-	font-weight: 300;
+	font-family: "Oxanium-R";
 	font-size: 4vw;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 800px) {
 	h1 {
 		font-size: 65px;
 	}
 	extra {
 		font-size: 35px;
 	}
+	extra2 {
+		font-size: 35px;
+	}
 }
 
+/* oxanium-regular - latin */
 @font-face {
-	font-family: "Oxanium"; /*a name to be used later*/
-	src: url("Oxanium-VariableFont_wght.ttf"); /*URL to font*/
-}
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Oxanium-R';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/oxanium-v19-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+		 url('../fonts/oxanium-v19-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+  
 
 /* unvisited link */
 a:link {
