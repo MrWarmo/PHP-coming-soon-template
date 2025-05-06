@@ -1,4 +1,3 @@
-# coming-soon-template
+# coming-soon-template - PHP Edition
 
-Basic site template to display "Coming Soon!" Message
-Using a Google Font and css
+Fork of my coming soon template to use a PHP script to show different text with different domains, while domains are connected to the same folder
